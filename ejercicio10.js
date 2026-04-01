@@ -5,7 +5,8 @@ lanzamientos de los dados. Sumar el resultado de lanzar dos dados y anotar en un
 número de apariciones de dicha suma, repitiendo 36.000 veces esta operación. *//* preguntar*/
 
 var resultados = new Array(13).fill(0); // Array para contar las apariciones de cada suma (2 a 12)
-for (var i = 0; i < 36000; i++) {
+for (var i = 0; i < 36000; i++) 
+    {
     var dado1 = Math.floor(Math.random() * 6) + 1; // Lanzamiento del primer dado
     var dado2 = Math.floor(Math.random() * 6) + 1; // Lanzamiento del segundo dado
     var suma = dado1 + dado2; // Suma de los dos dados

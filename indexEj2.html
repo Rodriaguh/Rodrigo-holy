@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioDos</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .header-container {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .header-container h1 {
+            color: #333;
+        }
+
+        .header-container p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Estilos para Dark Mode si decides activarlo en el body */
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .dark-mode h1, .dark-mode p {
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Ejercicio Dos</h1>
+        <p>A partir del siguiente array que se proporciona: var valores = [true, 5, false, "hola", "adios",2]; Determinar cual de los dos elementos de texto es mayor Utilizando exclusivamente los dos valores booleanos del array, determinar los operadores
+        necesarios para obtener un resultado true y otro resultado false Determinar el resultado de las cinco operaciones matemáticas realizadas con los dos elementos numéricos</p>
+    </div>
+
+    <button onclick="Ejercicio2()">Ejecutar Ejercicio 2</button>
+
+    <script src="ejercicio2.js"></script>
+</body>
+</html>
