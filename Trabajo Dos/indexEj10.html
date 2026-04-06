@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EjercicioDiez</title>
-    <script src="ejercicio10.js"></script>
+    <title>Ejercicio Diez</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .header-container {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .header-container h1 {
+            color: #333;
+        }
+
+        .header-container p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Estilos para Dark Mode si decides activarlo en el body */
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .dark-mode h1, .dark-mode p {
+            color: #eee;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="header-container">
+        <h1>Ejercicio Diez</h1>
+        <p>Escribir un script que simule el lanzamiento de dos dados. Hacer uso de la función Math.random para obtener números aleatorios entre 1 y 6 para cada uno de los lanzamientos de los dados. Sumar el resultado de lanzar dos dados y anotar en un array el número de apariciones de dicha suma, repitiendo 36.000 veces esta operación.</p>
+    </div>
+
+    <button onclick="Ejercicio10()">Ejecutar Ejercicio 10</button>
+
+    <script src="ejercicio10.js"></script>
 </body>
 </html>

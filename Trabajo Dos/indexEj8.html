@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EjercicioOcho</title>
-    <script src="ejercicio8.js"></script>
+    <title>Ejercicio Ocho</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .header-container {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .header-container h1 {
+            color: #333;
+        }
+
+        .header-container p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Estilos para Dark Mode si decides activarlo en el body */
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .dark-mode h1, .dark-mode p {
+            color: #eee;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="header-container">
+        <h1>Ejercicio Ocho</h1>
+        <p>Definir una función que determine si la cadena de texto que se le pasa como parámetro es un palíndromo, es decir, si se lee de la misma forma desde la izquierda y desde la derecha. Ejemplo de palíndromo complejo: "La ruta nos aporto otro paso natural".</p>
+    </div>
+
+    <button onclick="Ejercicio8()">Ejecutar Ejercicio 8</button>
+
+    <script src="ejercicio8.js"></script>
 </body>
 </html>

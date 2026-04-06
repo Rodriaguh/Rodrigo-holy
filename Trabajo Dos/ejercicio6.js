@@ -1,19 +1,19 @@
 /* EJERCICIO 6
-Escribir el código de una función a la que se pasa como parámetro un número entero y
-devuelve como resultado una cadena de texto que indica si el número es par o impar.
-Mostrar por pantalla el resultado devuelto por la función.*/
-var numero = prompt("Ingrese un número entero para determinar si es par o impar");
+Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.*/
 
-function esParOImpar(num)
-    {
-    if (num % 2 === 0)
-        {
-        return "El número " + num + " es par.";
-    }
-    else
-        {
-        return "El número " + num + " es impar.";
-    }
+function Ejercicio6(params) {
+    
+var numero = prompt("Ingrese un numero par o impar")
+
+console.log("El usuario ingreso: " + numero)
+
+if (isNaN(numero)){
+    console.log("Dato invalido, borrar la cuenta")
 }
-var resultado = esParOImpar(numero);
-console.log(resultado);
+else if(numero % 2 == 0){
+    console.log(numero + " es par")
+}
+else{
+     console.log(numero + " es impar")
+}
+}

@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EjercicioCinco</title>
-    <script src="ejercicio5.js"></script>
+    <title>Ejercicio Cinco</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .header-container {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .header-container h1 {
+            color: #333;
+        }
+
+        .header-container p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Estilos para Dark Mode si decides activarlo en el body */
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .dark-mode h1, .dark-mode p {
+            color: #eee;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="header-container">
+        <h1>Ejercicio Cinco</h1>
+        <p>El factorial de un número entero positivo (representado con el símbolo $n!$) es una de las funciones matemáticas que crece con mayor rapidez y es fundamental en el campo de la estadística y la combinatoria.</p>
+    </div>
+
+    <button onclick="Ejercicio5()">Ejecutar Ejercicio 5</button>
+
+    <script src="ejercicio5.js"></script>
 </body>
 </html>

@@ -7,8 +7,28 @@ En primer lugar (y en una sola instrucción) se debe comprobar si el número es 
 Si el número es válido, se calcula la letra que le corresponde según el método explicado anteriormente.
 Una vez calculada la letra, se debe comparar con la letra indicada por el usuario. Si no coinciden, se muestra un mensaje al usuario diciéndole que la letra que ha indicado no es correcta. En otro caso, se muestra un mensaje indicando que el número y la letra de DNI son correctos. */
 
-var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K','E', 'T'];
+function Ejercicio4() {
+    var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K','E', 'T'];
 
-var numeroDNI = prompt("Ingrese su número de DNI");
+    var numeroDNI = prompt("Ingrese su número de DNI");
+    var letraDNI = prompt("Ingrese la letra de su DNI");
 
-var letraDNI = prompt("Ingrese la letra de su DNI");
+    if (numeroDNI < 0 || numeroDNI > 99999999) {
+        console.log("Error, datos ingresados no validos ");
+    }
+    else {
+        var resto = numeroDNI % 23;
+        var letracalculada = letras[resto];
+      
+        if (letracalculada !== letraDNI.toUpperCase()) 
+            {
+            console.log("La letra que ha indicado no es correcta");
+        } 
+
+        else
+            {
+            console.log("El número y la letra de DNI son correctos");
+        }
+    }
+}
+

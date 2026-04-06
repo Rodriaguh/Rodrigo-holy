@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EjercicioNueve</title>
-    <script src="ejercicio9.js"></script>
+    <title>Ejercicio Nueve</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .header-container {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .header-container h1 {
+            color: #333;
+        }
+
+        .header-container p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Estilos para Dark Mode si decides activarlo en el body */
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .dark-mode h1, .dark-mode p {
+            color: #eee;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="header-container">
+        <h1>Ejercicio Nueve</h1>
+        <p>Definir la siguiente jerarquía de objetos, haciendo uso de los prototipos de JavaScript: Objeto Persona con las propiedades nombre, edad y género, y el método obtDetalles(), que muestra por pantalla las propiedades de la persona.Objeto Estudiante, que hereda de Persona, e incluye las propiedades curso y grupo y el método registrar(). Objeto Profesor, que hereda de Persona, e incluye las propiedades asignatura y nivel y el método asignar(). Crear los objetos y casos de prueba necesarios para comprobar el correcto funcionamiento de la jerarquía.</p>
+    </div>
+
+    <button onclick="Ejercicio9()">Ejecutar Ejercicio 9</button>
+
+    <script src="ejercicio9.js"></script>
 </body>
 </html>

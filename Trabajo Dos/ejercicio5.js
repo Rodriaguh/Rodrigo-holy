@@ -4,12 +4,13 @@ todos los factores n x (n-1) x (n-2) x ... x 1. Así, el factorial de 5 (escrito
 5! = 5 x 4 x 3 x 2 x 1 = 120
 Utilizando la estructura for, crear un script que calcule el factorial de un número entero. */
 
-var numero = prompt("Ingrese un número entero para calcular su factorial");
+function Ejercicio5(params) {
+    var numero = prompt("Introduce un numero")
+    var resultado = 1
 
-var factorial = 1;
-
-for (var i = 1; i <= numero; i++) 
-    {
-    factorial *= i;
+for (var i = numero; i > 0; i--){
+    resultado = resultado * i
 }
-console.log("El factorial de " + numero + " es: " + factorial);
+console.log("Numero ingresado: " + numero)
+console.log("Resultado del factorial: " + resultado) 
+}

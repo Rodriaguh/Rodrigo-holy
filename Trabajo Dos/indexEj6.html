@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EjercicioSeis</title>
-    <script src="ejercicio6.js"></script>
+    <title>Ejercicio Seis</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .header-container {
+            text-align: center;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .header-container h1 {
+            color: #333;
+        }
+
+        .header-container p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Estilos para Dark Mode si decides activarlo en el body */
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+
+        .dark-mode h1, .dark-mode p {
+            color: #eee;
+        }
+    </style>
 </head>
 <body>
+
+    <div class="header-container">
+        <h1>Ejercicio Seis</h1>
+        <p>Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.</p>
+    </div>
+
+    <button onclick="Ejercicio6()">Ejecutar Ejercicio 6</button>
+
+    <script src="ejercicio6.js"></script>
 </body>
 </html>
