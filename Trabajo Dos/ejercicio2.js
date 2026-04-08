@@ -13,16 +13,10 @@ var palabra = prompt("Ingrese una palabra");
 if (palabra > valores[3]) 
     {
     console.log("La palabra ingresada es mayor que " + valores[3]);
-}
-
-if (valores[0] && valores[2]) 
-    {
-    console.log("El resultado de la operación AND entre los dos valores booleanos es: " + (valores[0] && valores[2]));
-}
-
-if (valores[0] || valores[2]) 
-    {
-    console.log("El resultado de la operación OR entre los dos valores booleanos es: " + (valores[0] || valores[2]));
+    console.log(valores[0]);
+}else {
+    console.log("La palabra ingresada es menor que " + valores[3]);
+    console.log(valores[3]);
 }
 
 console.log("El resultado de la suma entre los dos elementos numéricos es: " + (valores[1] + valores[5]));

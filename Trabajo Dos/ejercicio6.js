@@ -3,7 +3,7 @@ Escribir el código de una función a la que se pasa como parámetro un número 
 
 function Ejercicio6(params) {
     
-var numero = prompt("Ingrese un numero par o impar")
+let numero = prompt("Ingrese un numero par o impar");
 
 console.log("El usuario ingreso: " + numero)
 

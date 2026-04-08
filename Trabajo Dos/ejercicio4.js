@@ -12,11 +12,11 @@ function Ejercicio4() {
 
     var numeroDNI = prompt("Ingrese su número de DNI");
     var letraDNI = prompt("Ingrese la letra de su DNI");
-
     if (numeroDNI < 0 || numeroDNI > 99999999) {
         console.log("Error, datos ingresados no validos ");
     }
-    else {
+    else 
+        {
         var resto = numeroDNI % 23;
         var letracalculada = letras[resto];
       
